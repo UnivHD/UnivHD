@@ -210,21 +210,15 @@
           <h2 id="note">
             <font color="000093">Highlights</font>
           </h2>
-
+          <li>
+            <font color="061E61"> We propose the UnivHD, a universal harmonic discriminator for the neural GAN-based vocoder, trained with the complete harmonic space that has the dynamic frequency resolution. Each harmonic filter bank preserves the primary harmonic structure and contributes to better synthesis quality of expressive speech.  </font>
+          </li>
+          <li>
+            <font color="061E61"> To further improve the perceptual quality and intelligibility of the generated speech, we design an effective network architecture, where the depthwise separable convolution and normal convolution are combined to simultaneously capture the relationships of intra-harmonic and inter-harmonic.
+            </font>
+          </li>
           <br></br>
-          <figure>
-            <p align="center"><img src="d2.png" width="98%" class="center" /></p>
-            <figcaption>
-              <p style="text-align: justify;">
-                <font color="061E61"><b>Figure 1:</b> The overall architecture of two versions of the universal harmonic discriminators. 
-                  In the subfigure (a), the naive version of harmonic discriminator is illustrated. FBP denotes the frequency band processing module. 
-                  HCB denotes the hybrid convolution block and MDC is the multi-scale dilated convolution. “C” stands for the concatenation operator. 
-                  In the subfigure (b), the proposed UnivHD is illustrated. The harmonic filter takes STFT representation as input and has the learnable bandwidth parameters.
-              </p>
-            </figcaption>
-          </figure>
-
-          <br></br>
+          
           <h2 id="section_3">
             <font color="000093">Demos for HiFiGAN</font>
           </h2>
@@ -232,8 +226,6 @@
             <font color="061E61">✅ speech demos.
             </font>
           </p>
-
-
 
           <div class="table-container">
             <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
@@ -264,138 +256,138 @@
                 <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
@@ -409,7 +401,6 @@
           </p>
 
 
-
           <div class="table-container">
             <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
               <thead>
@@ -439,138 +430,138 @@
                 <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/hifigan/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/hifigan/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
@@ -616,138 +607,138 @@
                 <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="speech/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="speech/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
@@ -789,138 +780,138 @@
                 <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>ID</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
               <tr>
                   <td>OD</td>
                   <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/base/encodec_24k_3kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
                   <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                          <source src="singing/istftnet/S/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/C/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
+                  <td><audio controls="controls">
+                          <source src="singing/istftnet/H/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
