@@ -200,9 +200,6 @@
             <font color="061E61"><a href="https://UnivHD.github.io/">Anonymous author</a><sup> &#x1F4EE;,1</sup>  
             </font>
           </b></p>
-        //<p style="line-height:0.6" align="center">
-        //  <font color="061E61"><sup>1</sup>Alibaba Digital Media & Entertainment Group</font>
-        //</p>
         <p style="line-height:1" align="center">
           <font color="061E61"><sup>&#x1F4EE;</sup>Corresponding author</font>
         </p>
@@ -234,21 +231,20 @@
             <p align="center"><img src="d2.png" width="98%" class="center" /></p>
             <figcaption>
               <p style="text-align: justify;">
-                <font color="061E61"><b>Figure 1:</b> The overall architecture of MDDM and multi-condition discriminative network.
-                  In figure (a), two D-* are encoder and decoder of discriminative network and output spectrogram is $ S_p $.  $ S_t $ 
-                  is the sampled spectrogram at time-step $ t $. The intermediate multi-view feature $ C_m $ and output $ S_p $ are the 
-                  conditions of diffusion model. In figure (b), S-* and T-* means frequency and time domains, respectively. 
-                  NPM is the noise perception module and $ \oslash $ means the modulation mode. Note that the skip connections are not drawn.
+                <font color="061E61"><b>Figure 1:</b> The overall architecture of two versions of the universal harmonic discriminators. 
+                  In the subfigure (a), the naive version of harmonic discriminator is illustrated. FBP denotes the frequency band processing module. 
+                  HCB denotes the hybrid convolution block and MDC is the multi-scale dilated convolution. “C” stands for the concatenation operator. 
+                  In the subfigure (b), the proposed UnivHD is illustrated. The harmonic filter takes STFT representation as input and has the learnable bandwidth parameters.
               </p>
             </figcaption>
           </figure>
 
           <br></br>
           <h2 id="section_3">
-            <font color="000093">Speech Demos</font>
+            <font color="000093">Demos for HiFiGAN</font>
           </h2>
           <p>
-            <font color="061E61">✅ We provide some speech demos.
+            <font color="061E61">✅ speech demos.
             </font>
           </p>
 
@@ -258,34 +254,35 @@
               </b></p> -->
           <br>
 
-          <h3>Samples</h3>
-          <p>
-            <font color="061E61">↔️ Scroll horizontally to view the full table.
-            </font>
-          </p>
 
           <div class="table-container">
             <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
               <thead>
                 <tr>
                   <th scope="col" width="180px" style="background-color: #FFD700;">
-                    <font color="061E61">ID</font>
+                    <font color="061E61">Type</font>
                   </th>
-                  <th scope="col" width="325px" style="background-color: #FFD700;">
-                    <font color="061E61">Original</font>
+                  <th scope="col" width="180px" style="background-color: #FFD701;">
+                    <font color="061E61">Ground Truth</font>
+                  </th>
+                  <th scope="col" width="325px" style="background-color: #FFD702;">
+                    <font color="061E61">HiFiGAN</font>
+                  </th>
+                  <th scope="col" width="325px" style="background-color: #FFD703;">
+                    <font color="061E61">+S</font>
                   </th>
                   <th scope="col" width="325px">
-                    <font color="061E61">Hdemucs</font>
+                    <font color="061E61">+C</font>
                   </th>
                   <th scope="col" width="325px">
-                    <font color="061E61">MDDM</font>
+                    <font color="061E61">+H</font>
                   </th>         
                 </tr>
               </thead>
   
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <td>ID</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
@@ -298,9 +295,17 @@
                           <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
+                  <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
+                  <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_247other.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
               </tr>
               <tr>
-                  <td>2</td>
+                  <td>ID</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_33other.wav" autoplay />Your browser does not support the audio
                           element.
@@ -313,9 +318,17 @@
                           <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_33other.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
               </tr>
               <tr>
-                  <td>3</td>
+                  <td>ID</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_109vocals.wav" autoplay />Your browser does not support the audio
                           element.
@@ -328,9 +341,17 @@
                           <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_109vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
               </tr>
               <tr>
-                  <td>4</td>
+                  <td>OD</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_6vocals.wav" autoplay />Your browser does not support the audio
                           element.
@@ -343,9 +364,17 @@
                           <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_6vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
               </tr>
               <tr>
-                  <td>5</td>
+                  <td>OD</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_159vocals.wav" autoplay />Your browser does not support the audio
                           element.
@@ -358,9 +387,17 @@
                           <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_159vocals.wav" autoplay />Your browser does not support the audio
+                          element.
+                      </audio></td>
               </tr>
               <tr>
-                  <td>6</td>
+                  <td>OD</td>
                   <td><audio controls="controls">
                           <source src="audio/groundtruth/musdb_243drums.wav" autoplay />Your browser does not support the audio
                           element.
@@ -373,19 +410,12 @@
                           <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-              </tr>
-              <tr>
-                  <td>7</td>
-                  <td><audio controls="controls">
-                          <source src="audio/groundtruth/musdb_123mixture.wav" autoplay />Your browser does not support the audio
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
-                  <td><audio controls="controls">
-                          <source src="audio/encodec_24k_3kbps/musdb_123mixture.wav" autoplay />Your browser does not support the
-                          audio element.
-                      </audio></td>
-                  <td><audio controls="controls">
-                          <source src="audio/hifi-codec-2kbps/musdb_123mixture.wav" autoplay />Your browser does not support the audio
+                <td><audio controls="controls">
+                          <source src="audio/hifi-codec-2kbps/musdb_243drums.wav" autoplay />Your browser does not support the audio
                           element.
                       </audio></td>
               </tr>
